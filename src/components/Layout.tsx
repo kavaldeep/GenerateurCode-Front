@@ -39,11 +39,7 @@ const Layout = ({ children, title }: any) => {
                   to="/"
                   className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
                 >
-                  <img
-                    src="https://myc.com.mt/wp-content/uploads/2023/02/myc-logo.svg"
-                    alt="MyC Logo"
-                    width="100px"
-                  />
+                  
                 </Link>
               </li>
               <li>
@@ -223,11 +219,7 @@ const Layout = ({ children, title }: any) => {
             <div className="md:flex md:justify-between">
               <div className="mb-6 md:mb-0">
                 <a href="./home" className="flex items-center">
-                  <img
-                    src="https://myc.com.mt/wp-content/uploads/2023/02/myc-logo.svg"
-                    alt="MyC Logo"
-                    width="100px"
-                  />
+                  
                 </a>
               </div>
               <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
