@@ -13,7 +13,7 @@ import { Navigate } from "react-router-dom";
 
 export const Customers = () => {
 	const [data, setData] = useState([]);
-	const [showModal, setShowModal] = useState<boolean>(false);
+	const [showModal, setShowModal] = useState<boolean>();
 	const [created, setCreated] = useState<boolean | string | null>(null);
 	const [error, setError] = useState<boolean | string | null>(null);
 
@@ -35,24 +35,14 @@ export const Customers = () => {
 
 	useEffect(() => {
 		fetchCustomers().then((data: any) => {
-			if (data) setData(data);
+				if (data) setData(data);
 		});
 	}, []);
 
 	if (!isAuthenticated()) {
 		return <Navigate to="/login" />;
 	} else {
-		if (data.length == 0) {
-			return (
-				<Layout title="Vouchers">
-					{/* GENERATE MODAL */}
-
-					<div className="md:mr-20 md:ml-20 md:mb-4 mb:mt-4 sm:mr-5 sm:ml-5 sm:mb-2 sm:mt-2 mx-auto justify-center text-center">
-						<LoadingSkeleton />
-					</div>
-				</Layout>
-			);
-		}
+		
 		return (
 			<Layout title="Customers">
 				{showModal && (

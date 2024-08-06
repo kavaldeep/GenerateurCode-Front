@@ -15,6 +15,7 @@ export const fetchCampaign = async (id: any) => {
 export const fetchCampaigns = async () => {
 	return new Promise(async (resolve, reject) => {
 		const res = await axios.get(`${API_URL}/api/campaigns`);
+		console.log(res.data);
 		resolve(res.data);
 	});
 };

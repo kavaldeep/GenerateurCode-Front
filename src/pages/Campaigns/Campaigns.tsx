@@ -52,6 +52,7 @@ export const Campaigns = () => {
 		}
 		return (
 			<Layout title="Campaigns">
+				
 				{showModal && (
 					<div
 						id="redeem-modal"
