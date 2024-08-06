@@ -41,17 +41,7 @@ export const Redemptions = () => {
 	if (!isAuthenticated()) {
 		return <Navigate to="/login" />;
 	} else {
-		if (data.length == 0) {
-			return (
-				<Layout title="Vouchers">
-					{/* GENERATE MODAL */}
-
-					<div className="md:mr-20 md:ml-20 md:mb-4 mb:mt-4 sm:mr-5 sm:ml-5 sm:mb-2 sm:mt-2 mx-auto justify-center text-center">
-						<LoadingSkeleton />
-					</div>
-				</Layout>
-			);
-		}
+		
 		return (
 			<Layout title="Redemptions">
 				{/*showModal && (
