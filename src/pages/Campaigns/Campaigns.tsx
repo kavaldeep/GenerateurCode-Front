@@ -220,7 +220,9 @@ export const Campaigns = () => {
 						Create a new Campaign
 					</Button>
 					
-					<SearchForm handleSearch={handleSearch} />
+					<SearchForm
+					label="Search a campaign by his name"
+					handleSearch={handleSearch} />
 					
 				</div>
 				<CampaignList data={data}></CampaignList>
